@@ -22,7 +22,11 @@ export default function MovieCard({ movie, onLike, onDislike }) {
                 textShadow: '0 2px 8px rgba(0,0,0,0.6)'
             }}>
                 {movie.title}
+
+                <br></br>
+                {movie.rating}
             </h2>
+            
 
             <p style={{
                 margin: '0 0 40px',
