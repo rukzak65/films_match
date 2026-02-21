@@ -60,7 +60,7 @@ function App() {
 
       {!selectedGenre ? (
         <div style={{ width: "100%", maxWidth: "420px" }}>
-          <h2 style={{ marginBottom: "20px" }}>Выберите жанр</h2>
+          <h2 style={{ marginBottom: "20px", textAlign: "center"  }}>Выберите жанр</h2>
           <GenreSelector onSelect={handleSelectGenre} />
         </div>
       ) : !filteredMovies[index] ? (
