@@ -60,8 +60,10 @@ function App() {
 
       {!selectedGenre ? (
         <div style={{ width: "100%", maxWidth: "420px" }}>
-          <h2 style={{ marginBottom: "20px" }}>Выберите жанр</h2>
-          <GenreSelector onSelect={handleSelectGenre} />
+          <GenreSelector 
+            onSelect={handleSelectGenre} 
+            onBack={backToGenres} 
+          />
         </div>
       ) : !filteredMovies[index] ? (
         <div style={{ textAlign: "center", marginTop: "100px" }}>
@@ -86,6 +88,37 @@ function App() {
         </div>
       ) : (
         <div style={{ width: "100%", maxWidth: "420px" }}>
+          <button
+            onClick={backToGenres}
+            style={{
+              marginBottom: '20px',
+              padding: '12px 24px',
+              fontSize: '1rem',
+              background: 'rgba(255, 255, 255, 0.05)',
+              color: '#ffffffff',
+              border: '1px solid rgba(255, 255, 255, 0.2)',
+              borderRadius: '10px',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+              transition: 'all 0.3s ease',
+              backdropFilter: 'blur(8px)'
+            }}
+            onMouseOver={(e) => {
+              e.target.style.background = 'rgba(26, 115, 232, 0.6)';
+              e.target.style.transform = 'translateY(-3px)';
+              e.target.style.boxShadow = '0 8px 25px rgba(26, 115, 232, 0.4)';
+            }}
+            onMouseOut={(e) => {
+              e.target.style.background = 'rgba(255, 255, 255, 0.1)';
+              e.target.style.transform = 'translateY(0)';
+              e.target.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.3)';
+            }}
+          >
+            ← К выбору жанра
+          </button>
+
           <MovieCard
             movie={filteredMovies[index]}
             onLike={handleLike}
