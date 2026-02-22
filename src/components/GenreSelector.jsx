@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function GenreSelector({ onSelect, onBack }) {
+export default function GenreSelector({ onSelect }) {
     const genres = [
         "Фантастика",
         "Хоррор",
@@ -18,11 +18,6 @@ export default function GenreSelector({ onSelect, onBack }) {
 
     return (
         <div style={{ width: '100%', maxWidth: '600px' }}>
-            {/* Кнопка возврата в главное меню */}
-
-
-            <h2 style={{ marginBottom: '20px', fontSize: '1.8rem' }}>Выберите жанр</h2>
-
             {/* Сетка жанров */}
             <div style={{
                 width: '100%',
