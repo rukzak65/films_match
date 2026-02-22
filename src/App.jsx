@@ -18,7 +18,12 @@ function App() {
   }, []);
 
   const handleSelectGenre = (genre) => {
-    const filtered = movies.filter((m) => m.genre === genre);
+    const normalize = (s) => (s || '').toLowerCase();
+    const sg = normalize(genre);
+    const filtered = movies.filter((m) => {
+      const mg = normalize(m.genre);
+      return mg && sg && (mg.includes(sg) || sg.includes(mg));
+    });
     setFilteredMovies(filtered);
     setSelectedGenre(genre);
     setIndex(0);
