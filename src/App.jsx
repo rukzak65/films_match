@@ -24,7 +24,7 @@ function App() {
       const mg = normalize(m.genre);
       return mg && sg && (mg.includes(sg) || sg.includes(mg));
     });
-    setFilteredMovies(filtered);
+    setFilteredMovies(filtered.sort(() => Math.random() - 0.5));
     setSelectedGenre(genre);
     setIndex(0);
   };
