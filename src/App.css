@@ -121,6 +121,7 @@
 }
 
 .app-ghost-btn {
+  
   margin-bottom: var(--space-3);
   padding: clamp(10px, 3vw, 12px) clamp(16px, 5vw, 24px);
   font-size: var(--text-sm);
@@ -197,6 +198,7 @@
 .movie-card {
   width: 100%;
   max-width: 420px;
+  margin-inline: auto;
   text-align: center;
   background: var(--app-surface-weak);
   border: 1px solid var(--app-surface-border);
