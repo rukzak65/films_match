@@ -79,7 +79,7 @@
 .app-section-title {
   margin: 0 0 var(--space-3);
   text-align: center;
-  font-size: var(--text-lg);
+  font-size: var(--text-lg);   
 }
 
 .app-empty-state {
@@ -120,7 +120,6 @@
   padding: clamp(12px, 4vw, 16px) clamp(24px, 8vw, 40px);
   font-size: clamp(1rem, 4.2vw, 1.4rem);
   background: var(--app-button-color);
-  box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
 }
 
 .app-ghost-btn {
