@@ -120,7 +120,10 @@
   box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
 }
 
-.app-ghost-btn {  
+.app-ghost-btn {
+  display: inline-flex;
+  margin-left: calc((100% - min(420px, 100%)) / 2);
+  margin-right: auto;
   margin-bottom: var(--space-3);
   padding: clamp(10px, 3vw, 12px) clamp(16px, 5vw, 24px);
   font-size: var(--text-sm);
