@@ -120,8 +120,7 @@
   box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
 }
 
-.app-ghost-btn {
-  
+.app-ghost-btn {  
   margin-bottom: var(--space-3);
   padding: clamp(10px, 3vw, 12px) clamp(16px, 5vw, 24px);
   font-size: var(--text-sm);
