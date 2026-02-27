@@ -17,6 +17,27 @@
   --safe-right: env(safe-area-inset-right, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --safe-left: env(safe-area-inset-left, 0px);
+
+  --tg-bg-color: #17212b;
+  --tg-secondary-bg-color: #1f2a36;
+  --tg-text-color: #ffffff;
+  --tg-hint-color: #9aa6b2;
+  --tg-link-color: #6ab2f2;
+  --tg-button-color: #2aabee;
+  --tg-button-text-color: #ffffff;
+
+  --app-bg-start: #0f2027;
+  --app-bg-mid: #203a43;
+  --app-bg-end: #2c5364;
+  --app-text-color: #ffffff;
+  --app-muted-color: rgba(255, 255, 255, 0.85);
+  --app-accent-color: #1a73e8;
+  --app-button-color: #2aabee;
+  --app-button-text-color: #ffffff;
+  --app-surface-bg: #1f2a36;
+  --app-surface-weak: rgba(255, 255, 255, 0.1);
+  --app-surface-border: rgba(255, 255, 255, 0.25);
+  --app-overlay: rgba(0, 0, 0, 0.75);
 }
 
 *,
