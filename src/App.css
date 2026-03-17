@@ -215,6 +215,39 @@
   backdrop-filter: blur(12px);
 }
 
+.movie-card-poster {
+  width: 100%;
+  margin-bottom: var(--space-3);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.movie-card-poster-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+}
+
+.movie-card-poster--fallback {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  background: var(--app-surface-weak);
+  border: 1px dashed var(--app-surface-border);
+}
+
+.movie-card-rating {
+  display: block;
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  font-weight: 400;
+  margin-top: 4px;
+  color: var(--app-muted-color);
+}
+
 .movie-card-title {
   margin: 0 0 var(--space-3);
   font-size: clamp(1.6rem, 7vw, 2.2rem);
