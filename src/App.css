@@ -210,7 +210,7 @@
   background: var(--app-surface-weak);
   border: 1px solid var(--app-surface-border);
   border-radius: 20px;
-  padding: clamp(20px, 6vw, 30px) clamp(16px, 5vw, 25px);
+  padding: clamp(12px, 4vw, 30px) clamp(12px, 4vw, 25px);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(12px);
 }
@@ -224,7 +224,7 @@
 
 .movie-card-poster-img {
   width: 100%;
-  height: auto;
+  max-height: 25vh;
   object-fit: contain;
   border-radius: 12px;
   display: block;
@@ -249,18 +249,18 @@
 }
 
 .movie-card-title {
-  margin: 0 0 var(--space-3);
-  font-size: clamp(1.6rem, 7vw, 2.2rem);
+  margin: 0 0 var(--space-2);
+  font-size: clamp(1.2rem, 5vw, 2.2rem);
   font-weight: 700;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
   line-height: 1.2;
 }
 
 .movie-card-description {
-  margin: 0 0 clamp(20px, 6vw, 40px);
-  font-size: var(--text-md);
+  margin: 0 0 clamp(8px, 2vw, 20px);
+  font-size: clamp(0.8rem, 3.2vw, 1rem);
   color: var(--app-muted-color);
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .movie-card-actions {
@@ -268,12 +268,12 @@
   align-items: center;
   justify-content: center;
   gap: clamp(16px, 7vw, 48px);
-  margin-top: var(--space-4);
+  margin-top: var(--space-2);
   flex-wrap: wrap;
 }
 
 .movie-action-btn {
-  width: clamp(72px, 22vw, 100px);
+  width: clamp(56px, 16vw, 100px);
   aspect-ratio: 1 / 1;
   border: none;
   border-radius: 50%;
